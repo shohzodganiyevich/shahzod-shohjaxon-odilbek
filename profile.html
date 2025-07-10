@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Foydalanuvchi Profillari</title>
+  <link rel="stylesheet" href="styles.css">
+  
+    
+ 
+</head>
+<body>
+
+<script>
+  let foydalanuvchilar = [
+    { ism: "Odilbek", email: "odilbek@example.com", telefon: "+998 90 111 11 11" },
+    { ism: "Shahlo", email: "shahlo@example.com", telefon: "+998 90 222 22 22" },
+    { ism: "Anvar", email: "anvar@example.com", telefon: "+998 90 333 33 33" },
+    { ism: "Dilshod", email: "dilshod@example.com", telefon: "+998 90 444 44 44" }
+  ];
+
+  foydalanuvchilar.forEach(foyda => {
+    let box = document.createElement("div");
+    box.className = "profile-box";
+    box.innerHTML = `
+      <h1>👤 Foydalanuvchi Profili</h1>
+      <div class="info"><span>Ism:</span> ${foyda.ism}</div>
+      <div class="info"><span>Email:</span> ${foyda.email}</div>
+      <div class="info"><span>Telefon:</span> ${foyda.telefon}</div>
+      <button class="edit-btn">Ma'lumotlarni tahrirlash</button>
+    `;
+    document.body.appendChild(box);
+  });
+</script>
+
+</body>
+</html>
