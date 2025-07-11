@@ -30,7 +30,7 @@ btn.addEventListener("click", async (e) => {
         email: email_inp.value,
         password: password_inp.value,
       });
-      // window.location.assign("./Shaxzodakani_papkasi/index.html");
+      window.location.assign("/product/index.html");
     } else {
       alert("Error: Try another login");
     }
